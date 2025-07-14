@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raniel Lambaco - Professional Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom progress bar styling */
+        .progress-bar-container {
+            background-color: #e2e8f0; /* Light gray background for the bar */
+            border-radius: 9999px; /* Fully rounded corners */
+            height: 10px;
+            overflow: hidden; /* Hide overflow for the inner bar */
+        }
+        .progress-bar-fill {
+            background-color: #3b82f6; /* Blue fill color */
+            height: 100%;
+            border-radius: 9999px;
+            width: 0%; /* Initial width for animation */
+            transition: width 1s ease-in-out; /* Smooth transition for width change */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4 px-6 fixed w-full top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-blue-600 rounded-lg p-2 hover:bg-blue-50 transition duration-300">Raniel Lambaco</a>
+            <div class="space-x-6">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-24 md:py-32 flex items-center justify-center min-h-screen-75 rounded-b-3xl shadow-xl mt-16">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-up">Hi, I'm <span class="text-yellow-300">Raniel Lambaco</span></h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up delay-200">A passionate Full-stack Web Developer with a knack for creating robust web solutions and engaging user experiences.</p>
+            <a href="#projects" class="bg-white text-blue-600 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 animate-fade-in-up delay-400">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-white rounded-xl shadow-lg mx-auto max-w-4xl mt-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3 flex justify-center">
+                    <!-- Placeholder for your profile picture -->
+                    <img src="https://placehold.co/200x200/a855f7/ffffff?text=Raniel" alt="Profile Picture" class="rounded-full shadow-lg border-4 border-purple-300 w-48 h-48 object-cover">
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-700 leading-relaxed">
+                    <p class="mb-4">
+                        Hello! I'm Raniel Lambaco, a motivated and customer-focused professional with a strong background in both web development and financial services.
+                        My journey in technology began with a passion for creating impactful web and mobile applications.
+                    </p>
+                    <p class="mb-4">
+                        I specialize in full-stack web development, designing corporate and e-commerce websites, implementing RESTful APIs, and developing custom plugins.
+                        My experience also includes optimizing websites for SEO and handling web hosting and domain management.
+                    </p>
+                    <p class="mb-4">
+                        Beyond coding, my background in banking has honed my customer service, analytical, and problem-solving skills, allowing me to approach projects with a user-centric mindset and deliver tailored solutions.
+                        I thrive in collaborative environments and am committed to continuous learning and professional development.
+                    </p>
+                    <p>
+                        Outside of work, I enjoy creating web and mobile applications, watching coding tutorials, playing video games, watching anime, and spending time with my family. I'm also passionate about helping customers achieve their first home.
+                    </p>
+                    <p class="mt-6 text-center md:text-left">
+                        <!-- Placeholder for CV download link -->
+                        <a href="Raniel Lambaco CV fits all.docx" download="Raniel_Lambaco_CV.docx" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 shadow-md">Download CV</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-100 rounded-xl shadow-lg mx-auto max-w-4xl mt-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Skill 1: HTML & CSS -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">HTML & CSS</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="95"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Proficient in semantic HTML5 and modern CSS techniques including Flexbox and Grid.</p>
+                </div>
+                <!-- Skill 2: JavaScript (ES6+) -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">JavaScript (ES6+)</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="90"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Strong understanding of vanilla JavaScript, DOM manipulation, and asynchronous programming.</p>
+                </div>
+                <!-- Skill 3: WordPress & Custom Plugins -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">WordPress & Custom Plugins</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="88"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Extensive experience in WordPress development, theme design, and custom plugin creation.</p>
+                </div>
+                <!-- Skill 4: RESTful API Development -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">RESTful API Development</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="85"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Skilled in creating and integrating RESTful APIs for web applications.</p>
+                </div>
+                <!-- Skill 5: Database Management (SQL/NoSQL) -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Database Management (SQL/NoSQL)</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="80"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Working knowledge of databases including Firebase and general SQL concepts.</p>
+                </div>
+                <!-- Skill 6: Version Control (Git) -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Version Control (Git)</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="90"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Experienced with Git for collaborative development, branching, merging, and pull requests.</p>
+                </div>
+                 <!-- Skill 7: SEO & Web Optimization -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">SEO & Web Optimization</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="78"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Proficient in implementing on-page and off-page SEO strategies to increase website traffic.</p>
+                </div>
+                 <!-- Skill 8: Web Hosting & Domain Management -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Web Hosting & Domain Management</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="82"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Experienced in handling web hosting, domains, and email services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-white rounded-xl shadow-lg mx-auto max-w-6xl mt-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: Online and Offline Appointment System for a Veterinary Clinic -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/3b82f6/ffffff?text=Vet+App" alt="Veterinary Clinic Appointment System Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Veterinary Clinic Appointment System</h3>
+                        <p class="text-gray-600 text-sm mb-4">Developed an online and offline appointment system for a veterinary clinic, streamlining their booking processes.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Web Development</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Offline Sync</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">View Demo</a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Code <span class="ml-1">&#8599;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2: WordPress Order Tracking Plugins with Maps -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/ef4444/ffffff?text=Order+Tracker" alt="WordPress Order Tracking Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">WordPress Order Tracking with Maps</h3>
+                        <p class="text-gray-600 text-sm mb-4">Created custom order tracking plugins with map integration for a WordPress ordering system, enhancing user experience.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">WordPress</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Maps API</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">View Demo</a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Code <span class="ml-1">&#8599;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3: Web and Mobile Application for Queueing System -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/22c55e/ffffff?text=Queue+App" alt="Queueing System Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Web & Mobile Queueing System</h3>
+                        <p class="text-gray-600 text-sm mb-4">Developed a web and mobile application for a faculty member's queueing system, improving efficiency.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Web App</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Mobile App</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">View Demo</a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Code <span class="ml-1">&#8599;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 4: Corporate and E-commerce Website Design -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/f97316/ffffff?text=Web+Design" alt="Corporate Website Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Corporate & E-commerce Website Design</h3>
+                        <p class="text-gray-600 text-sm mb-4">Designed and developed various corporate and e-commerce websites and sales landing pages, including SEO implementation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Web Design</span>
+                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full">E-commerce</span>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">SEO</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">View Demo</a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Code <span class="ml-1">&#8599;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-100 rounded-xl shadow-lg mx-auto max-w-4xl mt-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="flex justify-center gap-6">
+                <a href="mailto:niellambaco@gmail.com" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 shadow-md transform hover:scale-105">Email Me</a>
+                <a href="https://linkedin.com/in/raniel-lambaco-20357a183/" target="_blank" class="bg-gray-700 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition duration-300 shadow-md transform hover:scale-105">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank" class="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition duration-300 shadow-md transform hover:scale-105">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Raniel Lambaco. All rights reserved.</p>
+            <p class="text-sm mt-2">Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for animating progress bars
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillSection = document.getElementById('skills');
+            const progressBars = document.querySelectorAll('.progress-bar-fill');
+
+            const animateProgressBars = () => {
+                progressBars.forEach(bar => {
+                    const progress = bar.dataset.progress;
+                    bar.style.width = `${progress}%`;
+                });
+            };
+
+            // Use Intersection Observer to animate bars when they come into view
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateProgressBars();
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, {
+                threshold: 0.5 // Trigger when 50% of the section is visible
+            });
+
+            if (skillSection) {
+                observer.observe(skillSection);
+            }
+
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
